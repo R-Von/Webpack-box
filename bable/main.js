@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ \"./src/es6/hello.js\");\n/* harmony import */ var _world__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world */ \"./src/es6/world.js\");\n\n\n\nconsole.log(`${_hello__WEBPACK_IMPORTED_MODULE_0__[\"default\"]} ${_world__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}`)\n\n//# sourceURL=webpack:///./src/es6/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ \"./src/es6/hello.js\");\n/* harmony import */ var _world__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world */ \"./src/es6/world.js\");\n\n\nconsole.log(\"\".concat(_hello__WEBPACK_IMPORTED_MODULE_0__[\"default\"], \" \").concat(_world__WEBPACK_IMPORTED_MODULE_1__[\"default\"]));\n\n//# sourceURL=webpack:///./src/es6/index.js?");
 
 /***/ }),
 

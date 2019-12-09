@@ -7,13 +7,22 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
     "buildout": "webpack --mode production --output ./output/main.js",
-    "devout": "webpack --mode development --output ./output/main.js"
+    "devout": "webpack --mode development --output ./output/main.js",
+    "buildes": "webpack --mode production ./src/es6/index.js --output ./es/main.js",
+    "deves": "webpack --mode development ./src/es6/index.js --output ./es/main.js",
+    "buildba":"webpack --mode production ./src/es6/index.js --module-bind js=babel-loader --output ./bable/main.js",
+    "devba":"webpack --mode development ./src/es6/index.js --module-bind js=babel-loader --output ./bable/main.js"
+
   },
   "repository": {
     "type": "git",
