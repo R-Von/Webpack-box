@@ -9,7 +9,11 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "buildout": "webpack --mode production --output ./output/main.js",
+    "devout": "webpack --mode development --output ./output/main.js"
   },
   "repository": {
     "type": "git",
