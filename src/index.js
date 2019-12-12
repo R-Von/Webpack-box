@@ -1,5 +1,9 @@
-const hello = require('./hello')
+// const hello = require('./hello')
 
-const world = require('./world')
+// const world = require('./world')
 
-console.log(`${hello} ${world}`)
+// console.log(`${hello} ${world}`)
+
+import index from './index.css'
+
+console.log(index)
