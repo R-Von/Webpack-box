@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.graph {
+	border: 1px solid #dedede;
+  width:100%;
+  height: 1000px;
+}
+#cy{
+  width:100%;
+  height:100%;
+}
