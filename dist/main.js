@@ -127,7 +127,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\nconst hello = __webpack_require__(/*! ./hello */ \"./src/hello.js\")\n\nconst world = __webpack_require__(/*! ./world */ \"./src/world.js\")\n\n\n\nconsole.log(`${hello} ${world}`)\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\nconst hello = __webpack_require__(/*! ./hello */ \"./src/hello.js\")\n\nconst world = __webpack_require__(/*! ./world */ \"./src/world.js\")\n\n\n\nconsole.log(`${hello} ${world}`)\n\nvar app = document.querySelector('#app')\n\nconsole.log(app)\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

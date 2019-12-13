@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   mode:'development',
   entry:'./src/index.js',
+  // stats: { children: false },
   module:{
     rules:[
       {
@@ -18,6 +19,9 @@ module.exports = {
       filename:'[name].css',
       chunkFilename:'[name].css'
     }),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      title:'Index',
+      template:'./src/index.html'
+    })
   ]
 }
