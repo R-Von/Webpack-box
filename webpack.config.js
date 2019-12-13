@@ -4,7 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode:'development',
-  entry:'./src/index.js',
+  entry:{
+    index:'./src/index.js',
+    list:'./src/list.js'
+  },
   // stats: { children: false },
   module:{
     rules:[
@@ -22,12 +25,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       title:'Index',
       template:'./src/index.html',
-      filename:'index.html'
+      filename:'index.html',
+      chunks:['index']
     }),
     new HtmlWebpackPlugin({
       title:'List',
       template:'./src/list.html',
-      filename:'list.html'
+      filename:'list.html',
+      chunks:['list']
     })
   ]
 }
