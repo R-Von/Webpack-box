@@ -21,7 +21,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title:'Index',
-      template:'./src/index.html'
+      template:'./src/index.html',
+      filename:'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title:'List',
+      template:'./src/list.html',
+      filename:'list.html'
     })
   ]
 }
