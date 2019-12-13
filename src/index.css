@@ -2,3 +2,27 @@
   margin:0;
   padding:0;
 }
+.bg1{
+  background:url('./assets/img/1.png') no-repeat
+}
+
+.bg2{
+  background:url('./assets/img/2.png') no-repeat
+}
+
+.bg3{
+  background:url('./assets/img/3.png') no-repeat
+}
+
+.bg4{
+  background:url('./assets/img/4.png') no-repeat
+}
+
+.bg5{
+  background:url('./assets/img/5.png') no-repeat
+}
+
+.bg6{
+  background:url('./assets/img/6.png') no-repeat
+}
+
