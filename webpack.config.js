@@ -1,11 +1,16 @@
 const path = require('path')
-const HtmlWebpackPlugins = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode:'development',
   output:{
     path:path.resolve(__dirname,'dist')
+  },
+  devServer:{
+    contentBase:path.join(__dirname,'dist'),
+    port:9000,
+    hot:true
   },
   module: {
     rules:[
@@ -20,10 +25,14 @@ module.exports = {
     ]
   },
   plugins:[
-    new HtmlWebpackPlugins(),
+    new HtmlWebpackPlugin({
+      title:'App',
+      template:'./src/index.html'
+    }),
     new MiniCssExtractPlugin({
       filename:'[name].css',
       chunkFilename:'[name].css'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }
