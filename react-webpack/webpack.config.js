@@ -1,5 +1,6 @@
 const path = require('path')
-
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry:"./src/index.jsx",
@@ -8,6 +9,10 @@ module.exports = {
   },
   module:{
     rules:[
+      {
+        test:/\.css?$/,
+        use:['style-loader','css-loader']
+      },
       {
         test:/\.jsx?$/, //匹配js jsx文件
         exclude:'/node_modules', //过滤 node_modules文件夹
@@ -27,5 +32,11 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      filrname:'index.html',
+      template:'src/index.html'
+    })
+  ]
 }

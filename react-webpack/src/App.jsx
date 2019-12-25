@@ -1,14 +1,18 @@
-import React from 'react'
+import React , { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import { Header , Content , Footer } from './Layout'
+import './index.css'
 
 const App = ()=>{
   return (
-    <div>
-      <h1>Hello React and Webpack</h1>
-    </div>
+    <Fragment>
+      <Header />
+      <Content />
+      <Footer />
+    </Fragment>
   )
 }
 
 export default App
 
-// ReactDOM.render(<App />,document.getElementById('app'))
+ReactDOM.render(<App />,document.getElementById('app'))
