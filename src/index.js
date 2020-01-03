@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 import './reset.scss'
 
 const hello = require('./hello')
